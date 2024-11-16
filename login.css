@@ -1,0 +1,192 @@
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1 {
+    display: block;
+    margin: 40px;
+    margin-left: 100px;
+    width: 40%;
+}
+
+.space {
+    margin-top: 60px;
+}
+
+.row1 .space {
+    font-size: 40px;
+    color: #204188;
+    font-family: serif;
+}
+
+.row1 p {
+    color: #204188;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.row1 .a {
+    width: 20vw;
+    border-bottom: 2px solid #204188;
+    margin-top: 30px;
+}
+
+.row1 a {
+    text-decoration: none;
+    color: #64a16c;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    margin-top: 120px;
+    margin-left: 80px;
+    border: 2px solid rgba(51, 34, 34, 0.468);
+    border-radius: 20px;
+    box-shadow: 1px 2px 3px;
+    background-color: #204188;
+    width: 40%;
+}
+
+.row2 h1 {
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+}
+
+.row2 p {
+    margin-top: 10px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.row2 [type="email"], 
+.row2 [type="password"] {
+    height: 40px;
+    border-radius: 8px;
+    width: 90%;
+    margin: 2px auto 9px auto;
+    font-size: 20px;
+    display: block;
+}
+
+.row2 [type="submit"] {
+    height: 40px;
+    width: 140px;
+    background-color: #F6921D;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.row2 [type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.learn {
+    color: #204188;
+    background-color: #F6921D;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 10px 0 0;
+    display: block;
+    width: fit-content;
+}
+
+.learn:hover {
+    transform: scale(1.05);
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .row1 {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .row2 {
+        margin-left: 20px;
+        width: 45%;
+    }
+
+    .row1 .space {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .row1, .row2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .row1 .space {
+        font-size: 28px;
+    }
+
+    .row2 h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row1 .space {
+        font-size: 24px;
+    }
+
+    .row1 p, 
+    .row2 p {
+        font-size: 16px;
+    }
+
+    .row2 h1 {
+        font-size: 28px;
+    }
+
+    .row2 [type="email"], 
+    .row2 [type="password"] {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .row2 [type="submit"] {
+        width: 100px;
+        font-size: 16px;
+    }
+
+    .learn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
